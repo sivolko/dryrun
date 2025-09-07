@@ -1,0 +1,80 @@
+/* Dark mode styles */
+:root {
+    --light-bg: #ffffff;
+    --light-text: #2f2f2f;
+    --dark-bg: #121212;
+    --dark-text: #ffffff;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+/* Dark mode specific styles */
+.dark-mode .custom-navbar {
+    background-color: #1a1a1a !important;
+}
+
+.dark-mode .footer-section {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .product-section {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .why-choose-section {
+    background-color: #121212;
+}
+
+.dark-mode .testimonial-section {
+    background-color: #1a1a1a;
+}
+
+/* Dark mode button styles */
+#darkModeToggle {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.3s;
+}
+
+#darkModeToggle:hover {
+    transform: scale(1.1);
+}
+
+.dark-mode #darkModeToggle {
+    color: #f9bf29;
+}
+
+/* Dark mode text and link colors */
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode p {
+    color: var(--dark-text);
+}
+
+.dark-mode .nav-link {
+    color: #ffffff !important;
+}
+
+.dark-mode .nav-link:hover {
+    color: #f9bf29 !important;
+}
+
+/* Product cards in dark mode */
+.dark-mode .product-item {
+    background-color: #1a1a1a;
+    border-color: #333;
+}
